@@ -17,6 +17,8 @@ const Order = require('./models/Order');
 const { auth, admin, SECRET } = require('./middleware');
 const rateLimiter = require('./rateLimiter');
 const errorHandler = require('./errorHandler');
+// Test route
+app.get('/', (req, res) => res.send('Welcome to Bookstore API'));
 
 // Register
 app.post('/register', async (req, res, next) => {
